@@ -1,0 +1,253 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Redressed&display=swap');
+
+/* General */
+
+body {
+    --main-btn-color: rgb(216, 134, 52);
+    --second-btn-color: rgb(182, 173, 173);
+    --main-font-family: 'merriweather', serif;
+    --second-font-family: 'redressed', cursive;
+    --main-text-color: white;
+}
+
+/* Navigation */
+
+.navabar{
+    width: 100%;
+}
+
+.logo {
+    height: 80px;
+}
+
+.navbar-modif {
+    background-color: rgba(0,0,0,0.55);
+    font-family: var(--main-font-family);
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
+    text-transform: uppercase;
+    z-index: 99;
+}
+.navbar-brand {
+    font-weight: bolder;
+}
+.navbar-brand span {
+    color: var(--main-btn-color);
+}
+
+.navbar-modif .nav-link {
+    border-bottom: 1px solid transparent;
+    transition: 0.4s ease-in-out, border-color 0.3s ease;
+}
+
+.navbar-modif .nav-link:hover {
+    transform: scale(1.2);
+}
+#event {
+    color: var(--main-btn-color);
+    font-weight: bold ;
+}
+
+/* Banner */
+
+.banner{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url(images/background.jpg) 
+                center center fixed no-repeat;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-title {
+    font-family: var(--second-font-family);
+    color: var(--main-text-color);
+    text-transform: capitalize;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+#presentation {
+    display: flex;
+    width: auto;
+    text-align: justify;
+    font-family: var(--main-font-family);
+    color: var(--main-text-color);
+}
+
+.btn-sign, .btn-submit {
+    color: var(--main-btn-color);
+    border-color: var(--main-btn-color);
+    transition: 0.5s;
+    font-family: var(--main-font-family);
+    text-transform: uppercase;
+    display: block;
+}
+
+.btn-sign:hover, .btn-sign:active, .btn-submit:hover, .btn-submit:active {
+    color: #fff;
+    background-color: var(--main-btn-color);
+}
+
+/* TEACHER */
+
+.card-header {
+    font-family: var(--second-font-family);
+    font-size: 2em;
+}
+
+.menu-teacher {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url(images/background2.jpg) 
+    center center fixed no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.menu-teacher h3 {
+    text-align: center;
+    font-family: var(--second-font-family);
+    color: var(--main-text-color);
+    font-size: 48px;
+}
+
+.card-img-top {
+    max-height: 300px;
+}
+
+/* FORM */
+
+#form{
+    padding-top: 25em;
+    padding-bottom: 15em;
+}
+.order-form h2 {
+    font-family: var(--second-font-family);
+    margin-top: -5em;
+    text-align: center;
+    font-size: 48px;
+}
+
+.order-form{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url(images/background.jpg) 
+                center center fixed no-repeat;
+    background-size: cover;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-submit{
+    margin-top: 25px;
+}
+
+/* FOOTER */ 
+
+footer {
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+    background-color: rgba(0,0,0,0.5);
+    font-family: var(--main-font-family);
+}
+
+/* EVENT CSS */
+
+/* BANNER */
+
+.banner-event{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0, 0.05)), 
+                url(images/bg-event.jpg) 
+                center center fixed no-repeat;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Carousel */
+
+.carousel-item {
+    max-height: 500px;
+}
+
+#event-title {
+    font-family: var(--second-font-family);
+    color:#3f48cc;
+    text-transform: capitalize;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: right; 
+    margin-top: 1.5em;
+}
+
+#event-presentation {
+    width: auto;
+    text-align: justify;
+    font-family: var(--main-font-family);
+    color:#3f48cc;
+    justify-content: center;
+}
+
+#rock {
+    width: auto;
+    text-align: center;
+    font: var(--main-font-family);
+    color:#3f48cc;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* FORM-EVENT */
+
+#form-event{
+    padding-top: 28em;
+    padding-bottom: 5em;
+}
+#form-event h2 {
+    font-family: var(--second-font-family);
+    margin-top: -5em;
+    text-align: center;
+    font-size: 68px;
+    color: var(--main-btn-color);
+    padding-bottom: 1em;
+}
+
+#form-event{
+    background: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.05)), 
+                url(images/bg-form-event.jpg) 
+                center center fixed no-repeat;
+    background-size: cover;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.map {
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-event p {
+    color : white;
+}
+#form-event a {
+    color: white;
+}
+
+#form-event a:hover {
+    color: var(--main-btn-color);
+}
+
+#form-envet a:visited {
+    color: white;
+}
